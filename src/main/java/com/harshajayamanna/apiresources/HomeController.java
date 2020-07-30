@@ -15,7 +15,7 @@ public class HomeController {
     @ResponseBody
     @ResponseStatus(code = HttpStatus.OK)
     public Set<String> healthCheck() {
-        return Collections.singleton("Morning Core API : Status is OK2");
+        return Collections.singleton("API is OKAY.");
     }
 
     @PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_ROASTER') or hasRole('ROLE_ADMIN')")
@@ -24,7 +24,7 @@ public class HomeController {
     @ResponseBody
     @ResponseStatus(code = HttpStatus.OK)
     public Set<String> get() {
-        return Collections.singleton("Test");
+        return Collections.singleton("API route is secured.");
     }
 
 }

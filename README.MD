@@ -8,3 +8,5 @@ Then, the token will be included in the request header.
 Finally, you can call the resource server
 
 Please visit my blog post to learn more.
+
+https://www.harshajayamanna.com/2020/07/use-spring-resource-server-with-aws-cognito.html
