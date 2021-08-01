@@ -22,7 +22,7 @@ public class HomeController {
         return Collections.singleton("API is OKAY.");
     }
 
-    @PreAuthorize("hasRole('ROLE_USER') or hasRole('ROLE_ROASTER') or hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ROLE_ADMIN')")
     @RequestMapping(value = "/test", method = RequestMethod.GET, produces = { "application/json",
             "application/xml" })
     @ResponseBody
@@ -42,7 +42,6 @@ public class HomeController {
         map.put("host", hostname);
         map.put("status", "up");
         return map;
-
     }
 
 }
